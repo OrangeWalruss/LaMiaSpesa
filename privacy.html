@@ -68,23 +68,27 @@ footer{color:var(--mut);font-size:13px;margin-top:30px;text-align:center}
     <h2>6. Fornitori (responsabili del trattamento) e trasferimenti</h2>
     <p>Per erogare il servizio ci avvaliamo di responsabili del trattamento vincolati da appositi accordi (art. 28 GDPR):</p>
     <ul>
-      <li><b>Supabase</b> — autenticazione, database e funzioni server.</li>
+      <li><b>Supabase</b> — autenticazione, database e funzioni server. I dati dell'account e dei contenuti sono ospitati su server nell'Unione Europea.</li>
       <li><b>Google Firebase Cloud Messaging</b> (Google Ireland/LLC) — invio delle notifiche push.</li>
+      <li><b>Backblaze</b> — archiviazione dei backup del database, cifrati e ospitati su server nell'Unione Europea.</li>
+      <li><b>GitHub Actions</b> (GitHub/Microsoft) — esecuzione automatica del processo di backup; i dati vengono cifrati durante l'operazione.</li>
     </ul>
-    <p>L'uso di Google Firebase comporta un trasferimento di dati verso gli Stati Uniti. Tali trasferimenti extra-UE sono assistiti da garanzie adeguate ai sensi degli artt. 44 e seguenti GDPR: clausole contrattuali standard della Commissione europea e, per Google, il Data Privacy Framework UE-USA.</p>
+    <p>L'uso di Google Firebase e di GitHub comporta trasferimenti di dati verso gli Stati Uniti. Tali trasferimenti extra-UE sono assistiti da garanzie adeguate ai sensi degli artt. 44 e seguenti GDPR: clausole contrattuali standard della Commissione europea e Data Privacy Framework UE-USA. I backup risultanti sono comunque cifrati e archiviati nell'Unione Europea.</p>
 
     <h2>7. Conservazione</h2>
     <ul>
-      <li>Conserviamo i dati per il tempo in cui usi il servizio.</li>
-      <li>Gli account rimasti inattivi per un lungo periodo (e i contenuti che vi appartengono) possono essere rimossi automaticamente.</li>
-      <li>Puoi eliminare il tuo account in qualsiasi momento dal Profilo: i dati di tua proprietà e l'utenza vengono rimossi in modo definitivo, salvo eventuali copie tecniche temporanee nei backup dei fornitori, sovrascritte secondo i loro cicli.</li>
+      <li>I dati restano attivi finché usi il servizio: ogni modifica rinnova un termine tecnico di 30 giorni.</li>
+      <li>Gli account rimasti inattivi per circa 60 giorni, e tutti i contenuti che vi appartengono, vengono cancellati automaticamente.</li>
+      <li>I log tecnici delle notifiche sono conservati fino a 90 giorni.</li>
+      <li>Effettuiamo backup del database a fini di sicurezza (art. 32 GDPR): sono cifrati (AES-256), archiviati nell'Unione Europea e cancellati automaticamente dopo circa 30 giorni.</li>
+      <li>Puoi eliminare il tuo account in qualsiasi momento dal Profilo: i dati di tua proprietà e l'utenza vengono rimossi in modo definitivo; eventuali copie residue nei backup cifrati vengono sovrascritte entro il ciclo di rotazione (circa 30 giorni).</li>
     </ul>
 
     <h2>8. Sicurezza</h2>
     <p>I dati viaggiano cifrati (HTTPS/TLS); l'accesso al database è protetto da regole per riga (Row Level Security), così che ciascuno acceda solo ai propri dati e a quelli condivisi con lui; le password e le chiavi di recupero sono salvate solo in forma cifrata/hash. In caso di violazione dei dati che comporti un rischio per i tuoi diritti, agiremo secondo gli artt. 33-34 GDPR.</p>
 
     <h2>9. I tuoi diritti</h2>
-    <p>Hai diritto di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione, e di revocare i consensi prestati. Puoi esercitarli scrivendo a <a href="mailto:nicola.iannone.dev@gmail.com">nicola.iannone.dev@gmail.com</a>; ti risponderemo nei termini di legge. Puoi inoltre proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" rel="noopener" target="_blank">www.garanteprivacy.it</a>).</p>
+    <p>Hai diritto di accesso, rettifica, cancellazione, limitazione, portabilità e opposizione, e di revocare i consensi prestati. Puoi inoltre esportare i tuoi dati in formato leggibile direttamente dal Profilo dell'App. Puoi esercitare i tuoi diritti scrivendo a <a href="mailto:nicola.iannone.dev@gmail.com">nicola.iannone.dev@gmail.com</a>; ti risponderemo nei termini di legge. Puoi inoltre proporre reclamo al Garante per la protezione dei dati personali (<a href="https://www.garanteprivacy.it" rel="noopener" target="_blank">www.garanteprivacy.it</a>).</p>
 
     <h2>10. Minori</h2>
     <p>L'App non è destinata a minori di 14 anni (art. 2-quinquies Codice Privacy); non raccogliamo consapevolmente i loro dati. Se ritieni che un minore ci abbia fornito dati, scrivici e li elimineremo.</p>
